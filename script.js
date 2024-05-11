@@ -1,10 +1,14 @@
-function a(){
-    var b= 10; 
-    c();
-    function c (){
-        console.log(b)
+function counter() {
+    let count = 0;
+    
+    function increment() {
+      count++;
+      console.log(count);
     }
-}
-
-a()
+    
+    return increment;
+  }
   
+  let myCounter = counter();
+  myCounter(); // Output: ?
+  myCounter(); // Output: ?
